@@ -5,13 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Creative Studio landing page.">
     <meta name="author" content="Devcrud">
-    <title>Creative Studio | Free Bootstrap 4.3.x template</title>
+    <title>Happy Birthday em yêu </title>
 
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
 
     <!-- Bootstrap + Creative Studio main styles -->
 	<link rel="stylesheet" href="assets/css/creative-studio.css">
+    <style>
+        @-webkit-keyframes heartflakes-fall {
+          0% {top:-10%}
+          100% {top:100%}
+        }
+        @-webkit-keyframes heartflakes-shake {
+          0%,100% {-webkit-transform:translateX(0);transform:translateX(0)}
+          50% {-webkit-transform:translateX(80px);transform:translateX(80px)}
+        }
+        @keyframes heartflakes-fall {
+          0% {top:-10%}
+          100% {top:100%}
+        }
+        @keyframes heartflakes-shake {
+          0%,100%{ transform:translateX(0)}
+          50% {transform:translateX(80px)}
+        }
+        .heartflake {
+          color: #fff;
+          font-size: 1em;
+          font-family: Arial, sans-serif;
+          text-shadow: 0 0 5px #000;
+          position:fixed;
+          top:-10%;
+          z-index:9999;
+          -webkit-user-select:none;
+          -moz-user-select:none;
+          -ms-user-select:none;
+          user-select:none;
+          cursor:default;
+          -webkit-animation-name:heartflakes-fall,heartflakes-shake;
+          -webkit-animation-duration:10s,3s;
+          -webkit-animation-timing-function:linear,ease-in-out;
+          -webkit-animation-iteration-count:infinite,infinite;
+          -webkit-animation-play-state:running,running;
+          animation-name:heartflakes-fall,heartflakes-shake;
+          animation-duration:10s,3s;
+          animation-timing-function:linear,ease-in-out;
+          animation-iteration-count:infinite,infinite;
+          animation-play-state:running,running;
+        }
+        .heartflake:nth-of-type(0){
+          left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s
+        }
+        .heartflake:nth-of-type(1){
+          left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s
+        }
+        .heartflake:nth-of-type(2){
+          left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s
+        }
+        .heartflake:nth-of-type(3){
+          left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s
+        }
+        .heartflake:nth-of-type(4){
+          left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s
+        }
+        .heartflake:nth-of-type(5){
+          left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s
+        }
+        .heartflake:nth-of-type(6){
+          left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s
+        }
+        .heartflake:nth-of-type(7){
+          left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s
+        }
+        .heartflake:nth-of-type(8){
+          left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s
+        }
+        .heartflake:nth-of-type(9){
+          left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s
+        }
+        .heartflake:nth-of-type(10){
+          left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s
+        }
+        .heartflake:nth-of-type(11){
+          left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s
+        }
+      </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
@@ -19,15 +97,17 @@
     <nav class="navbar custom-navbar navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="20">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./assets/imgs/heart.png" alt="">
+                <img src="./assets/imgs/favourite.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
-                   Thông điệp gì đó
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" ></div>
+                <p style="color: #F9667E; font-size: medium; text-align: center ;padding-right: 165px;
+                padding-top: 10px;">
+                   Chúc cho mọi điểu tốt đẹp nhất trên cuộc đời này sẽ tới với cô bé của anh ❤
+                </p>
             </div>
         </div>
     </nav>
@@ -36,10 +116,10 @@
     <!-- Page Header -->
     <header class="header">
         <div class="overlay">
-            <h6 class="subtitle">Happy new year</h6>
-            <h1 class="title">Happy Birthday</h1>
+            <h6 class="subtitle"  style="color: #F9667E !important" >__28.02.2023__</h6>
+            <h1 class="title">Love & Birthday!!!</h1>
             <div class="buttons text-center">
-                <a href="#portfolio" class="btn btn-primary rounded w-lg btn-lg my-1">Our Momment</a>
+                <a href="#portfolio" class="btn btn-primary rounded w-lg btn-lg my-1">Birthday</a>
                 <a href="#date" class="btn btn-outline-light rounded w-lg btn-lg my-1">Dating</a>
             </div>              
         </div>      
@@ -48,20 +128,14 @@
 
     <!-- Box -->
     <div class="box text-center">
+      
         <div class="box-item">
-            <i class="ti-vector"></i>
-            <h6 class="box-title">UX/UI Design</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis excepturi, repellat esse laborum explicabo quia.</p>
+            <i class="ti-cloud" aria-hidden="true"></i>
+            <p style="color: #F9667E !important">21/09/2022 10:13 AM: Mình gửi bạn JD tham khảo về vị trí .Net bên mình ạ </p>
         </div>
         <div class="box-item">
-            <i class="ti-filter"></i>
-            <h6 class="box-title">Web Development</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis excepturi, repellat esse laborum explicabo quia.</p>
-        </div>
-        <div class="box-item">
-            <i class="ti-mobile"></i>
-            <h6 class="box-title">App Design</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis excepturi, repellat esse laborum explicabo quia.</p>
+            <img src="../assets/imgs/dinosaur.png" alt="" style="min-height: 10px; min-width: 10px !important; width: 65px; height: 65px; margin-bottom: 10px;">
+            <p style="color: #F9667E !important">17/11/2022 ??:?? PM : Anh không muốn làm bạn với em nữa! Em tin anh chứ?</p>
         </div>
     </div>
     <!-- End of Box -->
@@ -71,14 +145,14 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-5 col-lg-4">
-                    <img src="" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page" class="w-100 img-thumbnail mb-3">
+                    <img src="../assets/imgs/img1.JPG" alt="" width="300px" height="400px">
                 </div>
                 <div class="col-md-7 col-lg-8">
-                    <h6 class="section-subtitle mb-0">We Create</h6>
-                    <h6 class="section-title mb-3">Awesome Work</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente cupiditate quas, amet harum perferendis minus, cum dolorum obcaecati iste aspernatur voluptatum aut.</p>
-                    <p>Cum laudantium unde nemo doloribus eligendi quodarum ea vitae dicta. Accusantium vero, ea? Alias, atque libero. Id, ut harum. </p>
-                    <p>consectetur adipisicing elit. Omnis quidem, quos iure a dolorum illum culpa quia nemo soluta, ratione harum beatae minus doloribus consectetur! Similique tempora sunt doloribus molestias.</p>
+                    <h6 class="section-subtitle mb-0" style="font-family: 'Playball', cursive; "></h6>
+                    <h6 class="section-title mb-3" style="font-family: 'Playball', cursive;color: #F9667E">The first picture ❤</h6>
+                    <p>Đây là tấm hình đầu tiên cũng như là tấm hình đẹp nhất mà chúng ta đã có với nhau.</p>
+                    <p>Không phải do chúng ta tự chụp cũng chẳng thấy mặt 2 đứa mình nhưng nhìn nó ấm áp ghê ý. </p>
+                    <p>Anh cũng mong đó sẽ là hình ảnh chúng ta trong tương lai, anh phụ giúp em việc nhà , em thì bên cạnh nhìn anh âu yếm. Hehe cứ mãi bên nhau như vậy nhé!!</p>
                 </div>
             </div>
         </div>
@@ -88,24 +162,25 @@
     <!-- About Section with bg -->
     <section class="has-bg-img py-md">
         <div class="container text-center">
-            <h6 class="section-subtitle">We See</h6>
-            <h6 class="section-title mb-6">What Other Don't See.</h6>
+            <h6 class="section-subtitle">Let's See</h6>
+            <h6 class="section-title mb-6" style="color: #F9667E">Thanh Van of 2023.</h6>
             <div class="widget mb-4">
                 <div class="widget-item">
                     <i class="ti-notepad"></i>
-                    <h4>Planning</h4>
+                    <a href="#portfolio"><h4>Grow up</h4></a> 
                 </div>
                 <div class="widget-item">
-                    <i class="ti-layout"></i>
-                    <h4>Mockup</h4>
+                    <i class="ti-camera"></i>
+                    <a href="#video"><h4>Memories</h4></a>
                 </div>
                 <div class="widget-item">
-                    <i class="ti-filter"></i>
-                    <h4>Develope</h4>
+                    <i class="ti-wand"></i>
+                    <a href="#testimonial"><h4>Birthday</h4></a>
                 </div>
                 <div class="widget-item">
-                    <i class="ti-thumb-up"></i>
-                    <h4>Provide</h4>
+                   
+                    <i class="ti-heart"></i>
+                    <a href="#date"><h4>Love</h4></a>
                 </div>
             </div>
         </div>
@@ -116,71 +191,71 @@
     <!-- Portfolio section -->
     <section id="portfolio">
         <div class="container text-center">
-            <h6 class="section-subtitle">Our Awesome Works</h6>
-            <h6 class="section-title mb-5">Our Portfolio</h6>
+            <h6 class="section-subtitle">How did my princess</h6>
+            <h6 class="section-title mb-5" style="color: #F9667E">Grow up?</h6>
             <div class="row">
                 <div class="col-sm-4">
                     <div class="img-wrapper">
-                        <img src="assets/imgs/folio-1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <img src="assets/imgs/Van-3tuoi.JPG" alt="Van luc 3 tuoi">
                         <div class="overlay">
                             <div class="overlay-infos">
-                                <h5>Project Title</h5>
+                                <h5>Bé Vân 3 tuổi</h5>
                                 <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-heart"></i></a>
                             </div>  
                         </div>
                     </div>
                     <div class="img-wrapper">
-                        <img src="assets/imgs/folio-2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <img src="assets/imgs/Van 8tuoi.JPG" alt="Van luc 8 tuoi">
                         <div class="overlay">
                             <div class="overlay-infos">
-                                <h5>Project Title</h5>
+                                <h5>Bé Vân 8 tuổi</h5>
                                 <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-heart"></i></a>
                             </div>                              
                         </div>
                     </div>                  
                 </div>
                 <div class="col-sm-4">
                     <div class="img-wrapper">
-                        <img src="assets/imgs/folio-3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <img src="assets/imgs/Van 14tuoi.JPG" alt="Van luc 14 tuoi" style=" object-fit: cover;" width="60px" height="300px">
                         <div class="overlay">
                             <div class="overlay-infos">
-                                <h5>Project Title</h5>
+                                <h5>Bé Vân 14 tuổi</h5>
                                 <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-heart"></i></a>
                             </div>  
                         </div>
                     </div>
                     <div class="img-wrapper">
-                        <img src="assets/imgs/folio-4.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <img src="assets/imgs/Van20.JPG" alt="Van 20 tuoi"width="60px" height="430px" style=" object-fit: cover;">
                         <div class="overlay">
                             <div class="overlay-infos">
-                                <h5>Project Title</h5>
+                                <h5>Công chúa của tớ 20 tuổi</h5>
                                 <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-heart"></i></a>
                             </div>                              
                         </div>
                     </div>                  
                 </div>
                 <div class="col-sm-4">
                     <div class="img-wrapper">
-                        <img src="assets/imgs/folio-5.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <img src="assets/imgs/Van18 tuoi.JPG" alt="Van 18 tuoi">
                         <div class="overlay">
                             <div class="overlay-infos">
-                                <h5>Project Title</h5>
+                                <h5>Lúc này là 18 tuổi rùii</h5>
                                 <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-heart"></i></a>
                             </div>  
                         </div>
                     </div>
                     <div class="img-wrapper">
-                        <img src="assets/imgs/folio-6.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <img src="assets/imgs/Van15tuoi.JPG" alt="Van 15 tuoi" >
                         <div class="overlay">
                             <div class="overlay-infos">
-                                <h5>Project Title</h5>
+                                <h5>Bé này 15 tuổi rồi nè</h5>
                                 <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-heart"></i></a>
                             </div>                              
                         </div>
                     </div>                  
@@ -190,6 +265,12 @@
     </section>
     <!-- End of portfolio section -->
  <!--  DateTime  -->
+ <section id="portfolio" style="padding: 0 !important;">
+    <div class="container text-center">
+        <h6 class="section-subtitle">When did</h6>
+        <h6 class="section-title mb-5"style="color: #F9667E">Our love story begin?</h6>
+        </div>
+ </section>
  <div class="date" id="date">
     <div class="calendar">
         <div class="calendar__picture">
@@ -244,38 +325,44 @@
         </div>
       </div>
     </div>
+    <div style="display: flex; justify-content: center; padding-top: 20px; color: #F9667E"> Click on the heart!</div>
+
     <!-- End DateTime-->
     <section id="blog">
         <div class="container">
-            <h6 class="section-subtitle text-center">News Feeds</h6>
-            <h6 class="section-title mb-6 text-center">Our Blog</h6>
+            <h6 class="section-subtitle text-center">Listen me tell</h6>
+            <h6 class="section-title mb-6 text-center" style="color: #F9667E">Our Stories</h6>
 
             <div class="row">
                 <div class="col-md-4">
                     <div class="card blog-post my-4 my-sm-5 my-md-0">
-                        <img src="assets/imgs/blog-1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <img src="assets/imgs/giadinh.JPG" alt="" style=" object-fit: cover;" width="30px" height="500px">
                         <div class="card-body">
                             <div class="details mb-3">
-                                <a href="javascript:void(0)"><i class="ti-comments"></i> 123</a>
-                                <a href="javascript:void(0)"><i class="ti-eye"></i> 123</a>
+                              
                             </div>
-                            <h5 class="card-title">Possimus aliquam veniam</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium dolor nisi obcaecati, non laboriosam asperiores doloremque tempora repellendus iure!</p>
-                            <a href="javascript:void(0)" class="d-block mt-3">Read More...</a>
+                            <h5 class="card-title">Family</h5>
+                            <p>Anh biết đối với em thì gia đình là điều vô cùng thiêng liêng cũng như là có 1 vị trí quan trọng nhất trong em. Rất may mắn vì em có một gia đình
+                                vô cùng hạnh phúc và sung túc. Nên anh mong dù có chuyện gì đi nữa em cũng sẽ luôn nhớ nhà là nơi để trở về. Bố mẹ và mọi người rất yêu thương cô công chúa nhỏ này.
+                                Còn 1 điều nữa, anh rất rất mong sẽ sớm trở thành thành viên trong gia đình mình hí hí
+                            </p>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card blog-post my-4 my-sm-5 my-md-0">
-                        <img src="assets/imgs/blog-2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <img src="assets/imgs/life.JPG" alt=""style=" object-fit: cover;" width="30px" height="500px">
                         <div class="card-body">
                             <div class="details mb-3">
-                                <a href="javascript:void(0)"><i class="ti-comments"></i> 434</a>
-                                <a href="javascript:void(0)"><i class="ti-eye"></i> 987</a>
                             </div>
-                            <h5 class="card-title">Repudiandae laudantium</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium dolor nisi obcaecati, non laboriosam asperiores doloremque tempora repellendus iure!</p>
-                            <a href="javascript:void(0)" class="d-block mt-3">Read More...</a>
+                            <h5 class="card-title">Your life</h5>
+                            <p>Kể từ trước khi có anh xuất hiện trong cuộc đời em thì em vẫn luôn có gia đình, những người bạn tốt bên cạnh đồng hành cùng em, anh rất vui vì điều ấy. Nhưng nay 
+                                em có thêm cả anh rồi, nên là dù lớn dù bé cũng hãy cho phép anh được bên em và đồng hành cùng em nữa nhé. Anh sẽ luôn đứng phía sau động viên , ủng hộ mọi quyết định,
+                                đam mê cũng như những gì em theo đuổi. Hãy luôn luôn sống tích cực , lạc quan và giữ trên môi nụ cười rạng rỡ như bây giờ nhé. Chỉ cần là em thôi thì ngoảnh đầu lại sẽ 
+                                luôn có anh..
+                            </p>
+                           
                         </div>
                     </div>
                 </div>
@@ -284,12 +371,10 @@
                         <img src="assets/imgs/blog-3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
                         <div class="card-body">
                             <div class="details mb-3">
-                                <a href="javascript:void(0)"><i class="ti-comments"></i> 164</a>
-                                <a href="javascript:void(0)"><i class="ti-eye"></i> 425</a>
                             </div>
-                            <h5 class="card-title">Laboriosam asperiores</h5>
+                            <h5 class="card-title">Our love</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium dolor nisi obcaecati, non laboriosam asperiores doloremque tempora repellendus iure!</p>
-                            <a href="javascript:void(0)" class="d-block mt-3">Read More...</a>
+                           
                         </div>
                     </div>
                 </div>
@@ -297,12 +382,11 @@
         </div>
     </section>
     <!-- Video Section -->
-    <div class="video">
 
-         <h5 style="text-align: center;">Our Awesome Works</h5>
-            <h5 style="text-align: center;" >Our Portfolio</h5>
-    <section class="has-bg-img py-lg">
-        <div class="container text-center">
+
+ 
+    <section class="has-bg-img py-lg" id="video">
+        <div class="container text-center" style="height: auto;">
 
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-outline-primary play-control" data-toggle="modal" data-target="#exampleModalCenter">
@@ -318,38 +402,86 @@
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
-                <iframe width="100%" height="475" src="https://www.youtube.com/embed/TP4THzsAa3M" frameborder="0" allowfullscreen></iframe>
+                <iframe width="100%" height="800" src="https://www.youtube.com/embed/TP4THzsAa3M" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
-</div>
+
     <!-- end of modal -->
 
     <!-- Testimonial Section -->
     <section id="testimonial">
         <div class="container">
-            <h6 class="section-subtitle text-center">Testimonial</h6>
-            <h6 class="section-title text-center mb-6">What Our Clients Says</h6>
+            <h6 class="section-subtitle text-center">Congratulation</h6>
+            <h6 class="section-title text-center mb-6" style="color: #F9667E">From everyone </h6>
             <div class="row">
                 <div class="col-md-6">
                     <div class="testimonial-wrapper">
                         <div class="img-holder">
-                            <img src="assets/imgs/avatar-5.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">                     
+                            <img src="assets/imgs/Long.jpg" alt="anh long" style=" object-fit: cover;">                     
                         </div>
                         <div class="body">
-                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
-                            <h6 class="title">Richard Reb</h6>
+                            <p class="subtitle">Chúc em tuổi mới có thật nhiều sức khoẻ, luôn luôn xinh đẹp nè, học chăm học giỏi và ngoan hơn nhaa. Chúc mọi điều tốt đẹp nhất sẽ đến với cô bé của anh ở tuổi 20 này! Anh yêu em ❤</p>
+                            <h6 class="title">Anh iu của em</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="testimonial-wrapper">
                         <div class="img-holder">
-                            <img src="assets/imgs/avatar-6.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">                     
+                            <img src="assets/imgs/Manh.jpg" alt="Dang Manh" style=" object-fit: cover;">                     
                         </div>
                         <div class="body">
-                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
-                            <h6 class="title">John Doe</h6>
+                            <p class="subtitle">Chúc em có tiền trong tay,  thông minh trong óc và Nong kun trong tym. Chúc cho bình an, hạnh phúc và Nong kun luôn luôn cạnh em ;V.</p>
+                            <h6 class="title">Đăng Mạnh</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-wrapper">
+                        <div class="img-holder">
+                            <img src="assets/imgs/Long.jpg" alt="anh long" style=" object-fit: cover;">                     
+                        </div>
+                        <div class="body">
+                            <p class="subtitle">Chúc em tuổi mới có thật nhiều sức khoẻ, luôn luôn xinh đẹp nè, học chăm học giỏi và ngoan hơn nhaa. Chúc mọi điều tốt đẹp nhất sẽ đến với cô bé của anh ở tuổi 20 này! Anh yêu em ❤</p>
+                            <h6 class="title">Anh iu của em</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-wrapper">
+                        <div class="img-holder">
+                            <img src="assets/imgs/Manh.jpg" alt="Dang Manh" style=" object-fit: cover;">                     
+                        </div>
+                        <div class="body">
+                            <p class="subtitle">Chúc em có tiền trong tay,  thông minh trong óc và Nong kun trong tym. Chúc cho bình an, hạnh phúc và Nong kun luôn luôn cạnh em ;V.</p>
+                            <h6 class="title">Đăng Mạnh</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-wrapper">
+                        <div class="img-holder">
+                            <img src="assets/imgs/Long.jpg" alt="anh long" style=" object-fit: cover;">                     
+                        </div>
+                        <div class="body">
+                            <p class="subtitle">Chúc em tuổi mới có thật nhiều sức khoẻ, luôn luôn xinh đẹp nè, học chăm học giỏi và ngoan hơn nhaa. Chúc mọi điều tốt đẹp nhất sẽ đến với cô bé của anh ở tuổi 20 này! Anh yêu em ❤</p>
+                            <h6 class="title">Anh iu của em</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-wrapper">
+                        <div class="img-holder">
+                            <img src="assets/imgs/Manh.jpg" alt="Dang Manh" style=" object-fit: cover;">                     
+                        </div>
+                        <div class="body">
+                            <p class="subtitle">Chúc em có tiền trong tay,  thông minh trong óc và Nong kun trong tym. Chúc cho bình an, hạnh phúc và Nong kun luôn luôn cạnh em ;V.</p>
+                            <h6 class="title">Đăng Mạnh</h6>
                         </div>
                     </div>
                 </div>
@@ -441,7 +573,17 @@
           </div>
         </div>
       </div>
-
+      <div class="heartflakes" aria-hidden="true">
+        <div class="heartflake"><img src="assets/imgs/heart (2).png" width="20px" height="20px"></div>
+        <div class="heartflake"><img src="assets/imgs/heart (3).png" width="20px" height="20px"></div>
+        <div class="heartflake"><img src="assets/imgs/heart1.png" width="20px" height="20px"></i></div>
+        <div class="heartflake"><img src="assets/imgs/love.png" width="20px" height="20px"></i></div>
+        <div class="heartflake"><img src="assets/imgs/heart (2).png" width="20px" height="20px"></div>
+        <div class="heartflake"><img src="assets/imgs/heart (3).png" width="20px" height="20px"></div>
+        <div class="heartflake"><img src="assets/imgs/heart1.png" width="20px" height="20px"></i></div>
+        <div class="heartflake"><img src="assets/imgs/love.png" width="20px" height="20px"></i></div>
+        
+      </div>
 
 
     <!-- core  -->
